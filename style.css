@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    font-family: 'Great Vibes', cursive;
+    background-color: #D1BB9E;
+    color: #6F4E37;
+    margin: 0;
+    padding-top: 90px;
+    text-align: center;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #6F4E37;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-button {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #D1BB9E;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+/* TITRE DU HEADER */
+.header-title {
+    font-family: 'Great Vibes', cursive;
+    color: #D1BB9E;
+    font-size: 2.2em;
+    font-weight: bold;
+    line-height: 1.2em;
+    white-space: nowrap;
+    text-align: left;
+    margin-left: 30px;
+}
+
+/* NOUVELLE CLASSE POUR LE CŒUR */
+.heart {
+    font-size: 0.8em;
+    vertical-align: text-bottom;
+    margin-left: 10px;
+}
+
+/* MENU CACHÉ PAR DÉFAUT */
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 200px;
+    background-color: #6F4E37;
+    flex-direction: column;
+    text-align: left;
+}
+
+.nav-menu.show {
+    display: flex;
+}
+
+.nav-item {
+    color: #F8F4E3;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 1.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-item:last-child {
+    border-bottom: none;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* IMAGE HEADER */
+.image-container {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* CONTENU */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-family: 'Great Vibes', cursive;
+    white-space: nowrap;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 0;
+    font-family: 'Great Vibes', cursive;
+}
+
+.question-block {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les champs de saisie et le menu déroulant */
+.user-input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F8F4E3;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* MEDIA QUERIES pour les téléphones portables (moins de 768px) */
+@media (max-width: 768px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .header-title {
+        font-size: 1.2em;
+        margin-left: 15px;
+        white-space: normal;
+    }
+
+    .image-container {
+        width: 90%;
+        margin-top: 80px;
+    }
+}
+
+.submit-button {
+    background-color: #6F4E37;
+    color: #F8F4E3;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    font-family: 'Great Vibes', cursive;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.submit-button:hover {
+    background-color: #8C6A5A;
+}
+
+/* NOUVELLE CLASSE POUR LE MESSAGE DE REMERCIEMENT */
+.thank-you-message-hidden {
+    display: none;
+    font-size: 1.5em;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.thank-you-message-visible {
+    display: block;
+}
+
+/* Ajoutez ce nouveau style à votre fichier CSS */
+.error-field {
+    border: 2px solid red !important;
+}
+
+.required-note {
+    display: block;
+    text-align: right;
+    font-size: 1.2em;
+    color: #6F4E37;
+    margin-top: -15px;
+    margin-right: 0%;
+    margin-bottom: 20px;
+}
